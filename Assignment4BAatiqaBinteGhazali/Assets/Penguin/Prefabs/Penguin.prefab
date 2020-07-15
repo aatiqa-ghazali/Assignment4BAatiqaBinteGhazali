@@ -130,17 +130,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    vectorObservationSize: 8
-    numStackedVectorObservations: 1
-    vectorActionSize: 0200000003000000
-    vectorActionDescriptions: []
-    vectorActionSpaceType: 0
-  m_Model: {fileID: 0}
+    VectorObservationSize: 8
+    NumStackedVectorObservations: 1
+    VectorActionSize: 0200000003000000
+    VectorActionDescriptions: []
+    VectorActionSpaceType: 0
+  m_Model: {fileID: 5022602860645237092, guid: 67dbe60e2359dad4f827bb4e53787579, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: PenguinLearning
-  m_TeamID: 0
-  m_useChildSensors: 0
+  TeamId: 0
+  m_UseChildSensors: 0
 --- !u!114 &812840140069342631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -155,9 +155,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentParameters:
     maxStep: 5000
-    resetOnDone: 1
-    onDemandDecision: 0
-    numberOfActionsBetweenDecisions: 4
+  hasUpgradedFromAgentParameters: 1
+  MaxStep: 5000
   moveSpeed: 5
   turnSpeed: 180
   heartPrefab: {fileID: 3300794300987463939, guid: 143fa62b62d6c6e41bcd94ef7b757dbf,
@@ -176,21 +175,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bb6b867a41448888c1cd4f99643ad71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensorName: RayPerceptionSensor
-  detectableTags:
+  m_SensorName: RayPerceptionSensor
+  m_DetectableTags:
   - baby
   - fish
   - Untagged
-  raysPerDirection: 2
-  maxRayDegrees: 60
-  sphereCastRadius: 0.5
-  rayLength: 20
-  rayLayerMask:
+  m_RaysPerDirection: 2
+  m_MaxRayDegrees: 60
+  m_SphereCastRadius: 0.5
+  m_RayLength: 20
+  m_RayLayerMask:
     serializedVersion: 2
     m_Bits: 4294967291
-  observationStacks: 1
+  m_ObservationStacks: 1
   rayHitColor: {r: 1, g: 0, b: 0, a: 1}
   rayMissColor: {r: 1, g: 1, b: 1, a: 1}
-  useWorldPositions: 1
-  startVerticalOffset: 0
-  endVerticalOffset: 0
+  m_StartVerticalOffset: 0
+  m_EndVerticalOffset: 0
